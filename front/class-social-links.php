@@ -2,7 +2,7 @@
 /**
  * The social links functionality of the plugin.
  *
- * @link       www.crispybacon.it
+ * @link       v.serxhio@gmail.com
  * @since      1.0.0
  *
  * @package    Mokilla_Core

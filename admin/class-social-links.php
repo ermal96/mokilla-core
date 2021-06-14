@@ -2,7 +2,7 @@
 /**
  * The social-specific functionality of the plugin.
  *
- * @link       www.crispybacon.it
+ * @link       v.serxhio@gmail.com
  * @since      1.0.0
  *
  * @package    Mokilla_Core
@@ -172,7 +172,7 @@ class Social_Links {
 	 * Print the Section text
 	 */
 	public function print_section_info() {
-		print 'Inserisci i link per i social:';
+		print 'Enter the links for the social networks:';
 	}
 
 	/**

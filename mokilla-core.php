@@ -7,17 +7,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              www.crispybacon.it
+ * @link              v.serxhio@gmail.com
  * @since             1.0.0
  * @package           Mokilla_Core
  *
  * @wordpress-plugin
  * Plugin Name:       Mokilla Core
- * Plugin URI:        www.crispybacon.it
+ * Plugin URI:        v.serxhio@gmail.com
  * Description:       
  * Version:           1.0.0
  * Author:            Serxhio Vrapi
- * Author URI:        www.crispybacon.it/
+ * Author URI:        v.serxhio@gmail.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       mokilla-core

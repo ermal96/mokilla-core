@@ -5,7 +5,7 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       www.crispybacon.it
+ * @link       v.serxhio@gmail.com
  * @since      1.0.0
  *
  * @package    Mokilla_Core
