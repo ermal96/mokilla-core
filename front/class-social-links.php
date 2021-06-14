@@ -29,7 +29,7 @@ class Social_Links extends \WP_Widget {
 	 */
 	private static $instance = null;
 
-	const OPTION_NAME = 'cbwpt_social_links';
+	const OPTION_NAME = 'mkwp_social_links';
 
 	/**
 	 * The list of links
