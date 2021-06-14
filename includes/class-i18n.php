@@ -23,7 +23,7 @@ namespace mokilla\mokilla_core_includes;
  * @since      1.0.0
  * @package    Mokilla_Core
  * @subpackage Mokilla_Core/includes
- * @author     Serxhio Vrapi <support@crispybacon.it>
+ * @author     Serxhio Vrapi <v.serxhio@gmail.com>
  */
 class I18n {
 

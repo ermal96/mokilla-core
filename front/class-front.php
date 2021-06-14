@@ -21,7 +21,7 @@ use const mokilla\mokilla_core\PLUGIN_NAME;
  *
  * @package    Mokilla_Core
  * @subpackage Mokilla_Core/front
- * @author     Serxhio Vrapi <support@crispybacon.it>
+ * @author     Serxhio Vrapi <v.serxhio@gmail.com>
  */
 class Front {
 

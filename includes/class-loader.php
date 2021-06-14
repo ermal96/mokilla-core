@@ -20,7 +20,7 @@ namespace mokilla\mokilla_core_includes;
  *
  * @package    Mokilla_Core
  * @subpackage Mokilla_Core/includes
- * @author     Serxhio Vrapi <support@crispybacon.it>
+ * @author     Serxhio Vrapi <v.serxhio@gmail.com>
  */
 class Loader {
 

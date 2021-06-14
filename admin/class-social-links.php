@@ -19,7 +19,7 @@ namespace mokilla\mokilla_core_admin;
  *
  * @package    Mokilla_Core
  * @subpackage Mokilla_Core/admin
- * @author     Serxhio Vrapi <support@crispybacon.it>
+ * @author     Serxhio Vrapi <v.serxhio@gmail.com>
  */
 class Social_Links {
 

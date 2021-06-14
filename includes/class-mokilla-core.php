@@ -14,8 +14,6 @@
 
 namespace mokilla\mokilla_core_includes;
 
-use mokilla\mokilla_core_admin\Admin;
-use mokilla\mokilla_core_admin\Change_WP_Contacts;
 use mokilla\mokilla_core_admin\Social_Links;
 
 /**
@@ -30,7 +28,7 @@ use mokilla\mokilla_core_admin\Social_Links;
  * @since      1.0.0
  * @package    Mokilla_Core
  * @subpackage Mokilla_Core/includes
- * @author     Serxhio Vrapi <support@crispybacon.it>
+ * @author     Serxhio Vrapi <v.serxhio@gmail.com>
  */
 class Mokilla_Core {
 
@@ -129,18 +127,7 @@ class Mokilla_Core {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin    = Admin::get_instance();
-		$plugin_contacts = Change_WP_Contacts::get_instance();
 		$plugin_social   = Social_Links::get_instance();
-
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_admin_page' );
-
-		$this->loader->add_action( 'admin_menu', $plugin_contacts, 'add_plugin_page' );
-		$this->loader->add_action( 'admin_init', $plugin_contacts, 'page_init' );
-		$this->loader->add_filter( 'wp_mail_from', $plugin_contacts, 'sender_email' );
-		$this->loader->add_filter( 'wp_mail_from_name', $plugin_contacts, 'sender_name' );
 
 		$this->loader->add_action( 'admin_menu', $plugin_social, 'add_plugin_page' );
 		$this->loader->add_action( 'admin_init', $plugin_social, 'page_init' );

@@ -18,7 +18,7 @@ namespace mokilla\mokilla_core_front;
  *
  * @package    Mokilla_Core
  * @subpackage Mokilla_Core/front
- * @author     Serxhio Vrapi <support@crispybacon.it>
+ * @author     Serxhio Vrapi <v.serxhio@gmail.com>
  */
 class Social_Links extends \WP_Widget {
 
