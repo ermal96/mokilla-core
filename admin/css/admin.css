@@ -1,0 +1,29 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#mokilla-user-readme ul{
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+#mokilla-user-readme ul ul {
+	list-style-type: circle;
+}
+
+#mokilla-user-readme .importante {
+	background-color: #eee;
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+
+#mokilla-user-readme .importante .title {
+	font-weight: bold;
+}
+
+#mokilla-user-readme .top-link {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}

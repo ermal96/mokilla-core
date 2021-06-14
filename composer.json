@@ -1,0 +1,20 @@
+{
+	"name": "mokilla/mokilla-core",
+	"description": "",
+	"type": "wordpress-plugin",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"mokilla\\mokilla_core_admin\\": "admin/",
+			"mokilla\\mokilla_core_front\\": "front/",
+			"mokilla\\mokilla_core_includes\\": "includes/"
+		}
+	},
+	"require": {
+        "php": ">=7.0.0"
+	},
+	"config": {
+		"optimize-autoloader": true
+	}
+}
