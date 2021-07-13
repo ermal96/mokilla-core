@@ -15,7 +15,7 @@ namespace mokilla\mokilla_core_admin;
 
 class PostTypeListings
 {
-    const SLUG = 'mokilla_listings';
+    const SLUG = 'listings';
 
     /**
      * Singleton instance
@@ -76,11 +76,11 @@ class PostTypeListings
                 'menu_icon'                 => 'dashicons-grid-view',
                 'show_in_rest'              => true,
                 'public'                    => true,
-                'has_archive'               => false,
+                'has_archive'               => true,
                 'with_front'                => true,
                 'publicly_queryable'        => true,
                 'exclude_from_search'       => false,
-                'taxonomies'                => array('category'),
+                'taxonomies'                => array('category', 'post_tag'),
                 'supports'                  => array(
                     'title',
                     'editor',
@@ -90,11 +90,6 @@ class PostTypeListings
                     'page-attributes',
                     'post-formats',
                     'excerpt',
-                ),
-                'rewrite'        => array(
-                    'with_front' => false,
-                    'slug'       => __('listings', 'mokilla-core'),
-                    'pages'      => true,
                 ),
             )
         );
