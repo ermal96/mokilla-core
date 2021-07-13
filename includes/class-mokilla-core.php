@@ -15,6 +15,8 @@
 namespace mokilla\mokilla_core_includes;
 
 use mokilla\mokilla_core_admin\Social_Links;
+use mokilla\mokilla_core_admin\CategoryAcf;
+use mokilla\mokilla_core_admin\PostTypeListings;
 
 /**
  * The core plugin class.
@@ -127,10 +129,13 @@ class Mokilla_Core {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_social   = Social_Links::get_instance();
+		$plugin_social     = Social_Links::get_instance();
+		$plugin_category   = CategoryAcf::get_instance();
+		$plugin_cpt_listings   = PostTypeListings::get_instance();
 
 		$this->loader->add_action( 'admin_menu', $plugin_social, 'add_plugin_page' );
 		$this->loader->add_action( 'admin_init', $plugin_social, 'page_init' );
+		$this->loader->add_action( 'init', $plugin_cpt_listings, 'create_cpt' );
 	}
 
 	/**
