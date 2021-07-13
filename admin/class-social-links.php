@@ -137,17 +137,17 @@ class Social_Links {
 		);
 
 		add_settings_field(
-			'googleplus',
-			'Google+',
-			array( $this, 'googleplus_callback' ),
+			'instagram',
+			'Instagram',
+			array( $this, 'instagram_callback' ),
 			self::OPTION_NAME . '_admin',
 			'setting_section_id'
 		);
 
 		add_settings_field(
-			'linkedin',
-			'Linkedin',
-			array( $this, 'linkedin_callback' ),
+			'youtube',
+			'Youtube',
+			array( $this, 'youtube_callback' ),
 			self::OPTION_NAME . '_admin',
 			'setting_section_id'
 		);
@@ -200,22 +200,22 @@ class Social_Links {
 	/**
 	 * Get the settings option array and print one of its values
 	 */
-	public function googleplus_callback() {
+	public function instagram_callback() {
 		printf(
-			'<input type="text" id="googleplus" style="width: 400px" name="%s[googleplus]" value="%s" />',
+			'<input type="text" id="instagram" style="width: 400px" name="%s[instagram]" value="%s" />',
 			self::OPTION_NAME,
-			isset( $this->options['googleplus'] ) ? esc_attr( $this->options['googleplus'] ) : ''
+			isset( $this->options['instagram'] ) ? esc_attr( $this->options['instagram'] ) : ''
 		);
 	}
 
 	/**
 	 * Get the settings option array and print one of its values
 	 */
-	public function linkedin_callback() {
+	public function youtube_callback() {
 		printf(
-			'<input type="text" id="linkedin" style="width: 400px" name="%s[linkedin]" value="%s" />',
+			'<input type="text" id="youtube" style="width: 400px" name="%s[youtube]" value="%s" />',
 			self::OPTION_NAME,
-			isset( $this->options['linkedin'] ) ? esc_attr( $this->options['linkedin'] ) : ''
+			isset( $this->options['youtube'] ) ? esc_attr( $this->options['youtube'] ) : ''
 		);
 	}
 
