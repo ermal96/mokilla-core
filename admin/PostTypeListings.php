@@ -42,6 +42,7 @@ class PostTypeListings
     CONST ACF_USER_DESCRIPTION = 'mokilla_user_description';
     CONST ACF_USER_ROLE = 'mokilla_user_role';
     const ACF_USER_NAME = 'mokilla_user_name';
+    const ACF_USER_IMAGE = 'mokilla_user_image';
 
     /**
      * Singleton instance
@@ -604,6 +605,30 @@ class PostTypeListings
                         'maxlength' => '',
                         'rows' => 5,
                         'new_lines' => '',
+                    ),
+                    array(
+                        'key' => 'field_61004b42171fd',
+                        'label' => 'Image',
+                        'name' => self::ACF_USER_IMAGE,
+                        'type' => 'image',
+                        'instructions' => '',
+                        'required' => 1,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'return_format' => 'url',
+                        'preview_size' => 'medium',
+                        'library' => 'all',
+                        'min_width' => '',
+                        'min_height' => '',
+                        'min_size' => '',
+                        'max_width' => '',
+                        'max_height' => '',
+                        'max_size' => '',
+                        'mime_types' => '',
                     ),
                 ),
                 'location' => array(
