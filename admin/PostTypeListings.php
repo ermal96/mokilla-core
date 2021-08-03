@@ -12,6 +12,11 @@
 
 
 namespace mokilla\mokilla_core_admin;
+use mokilla\mokilla_core_admin\TaxonomyLocation;
+use mokilla\mokilla_core_admin\TaxonomyFeature;
+use mokilla\mokilla_core_admin\TaxonomyCity;
+use mokilla\mokilla_core_admin\TaxonomyCategory;
+use mokilla\mokilla_core_admin\TaxonomyCountry;
 
 class PostTypeListings
 {
@@ -108,7 +113,14 @@ class PostTypeListings
                 'with_front'                => true,
                 'publicly_queryable'        => true,
                 'exclude_from_search'       => false,
-                'taxonomies'                => array('category', 'post_tag'),
+                'taxonomies'                => array(
+                    'post_tag', 
+                    TaxonomyLocation::SLUG,
+                    TaxonomyFeature::SLUG,
+                    TaxonomyCity::SLUG,
+                    TaxonomyCategory::SLUG,
+                    TaxonomyCountry::SLUG
+                ),
                 'supports'                  => array(
                     'title',
                     'thumbnail',

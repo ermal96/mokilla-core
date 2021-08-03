@@ -19,6 +19,9 @@ use mokilla\mokilla_core_admin\CategoryAcf;
 use mokilla\mokilla_core_admin\PostTypeListings;
 use mokilla\mokilla_core_admin\TaxonomyLocation;
 use mokilla\mokilla_core_admin\TaxonomyFeature;
+use mokilla\mokilla_core_admin\TaxonomyCity;
+use mokilla\mokilla_core_admin\TaxonomyCategory;
+use mokilla\mokilla_core_admin\TaxonomyCountry;
 
 /**
  * The core plugin class.
@@ -131,17 +134,24 @@ class Mokilla_Core {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_social     = Social_Links::get_instance();
-		$plugin_category   = CategoryAcf::get_instance();
-		$plugin_cpt_listings   = PostTypeListings::get_instance();
-		$plugin_tax_location   = TaxonomyLocation::get_instance();
-		$plugin_tax_feature   = TaxonomyFeature::get_instance();
+		$plugin_social     		= Social_Links::get_instance();
+		$plugin_category   		= CategoryAcf::get_instance();
+		$plugin_cpt_listings  	= PostTypeListings::get_instance();
+		$plugin_tax_location   	= TaxonomyLocation::get_instance();
+		$plugin_tax_feature   	= TaxonomyFeature::get_instance();
+		$plugin_tax_city   		= TaxonomyCity::get_instance();
+		$plugin_tax_category   	= TaxonomyCategory::get_instance();
+		$plugin_tax_country   	= TaxonomyCountry::get_instance();
 
 		$this->loader->add_action( 'admin_menu', $plugin_social, 'add_plugin_page' );
 		$this->loader->add_action( 'admin_init', $plugin_social, 'page_init' );
 		$this->loader->add_action( 'init', $plugin_cpt_listings, 'create_cpt' );
+		$this->loader->add_action( 'init', $plugin_tax_country, 'create_tax' );
+		$this->loader->add_action( 'init', $plugin_tax_city, 'create_tax' );
 		$this->loader->add_action( 'init', $plugin_tax_location, 'create_tax' );
+		$this->loader->add_action( 'init', $plugin_tax_category, 'create_tax' );
 		$this->loader->add_action( 'init', $plugin_tax_feature, 'create_tax' );
+		
 	}
 
 	/**
