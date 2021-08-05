@@ -15,19 +15,19 @@ namespace mokilla\mokilla_core_admin;
 
 use mokilla\mokilla_core_admin\PostTypeListings;
 
-class TaxonomyFeature
+class TaxonomyMunicipality
 {
-    const SLUG = 'feature';
+    const SLUG = 'municipality';
 
     /**
      * Singleton instance
      *
-     * @var TaxonomyFeature|null $instance This instance.
+     * @var TaxonomyMunicipality|null $instance This instance.
      */
     private static $instance = null;
 
     /**
-     * TaxonomyFeature constructor.
+     * TaxonomyMunicipality constructor.
      */
     private function __construct()
     {
@@ -36,9 +36,9 @@ class TaxonomyFeature
     /**
      * Get the singleton instance
      *
-     * @return TaxonomyFeature
+     * @return TaxonomyMunicipality
      */
-    public static function get_instance(): TaxonomyFeature
+    public static function get_instance(): TaxonomyMunicipality
     {
         if (is_null(self::$instance)) {
             $c              = __CLASS__;
@@ -50,32 +50,32 @@ class TaxonomyFeature
 
 
     /**
-     * Creates Tax TaxonomyFeature.
+     * Creates Tax TaxonomyMunicipality.
      */
     public function create_tax()
     {
 
         $labels = array(
-            'name'                       => _x( 'Features', 'Taxonomy General Name', 'mokilla-core' ),
-            'singular_name'              => _x( 'Feature', 'Taxonomy Singular Name', 'mokilla-core' ),
-            'menu_name'                  => __( 'Features', 'mokilla-core' ),
-            'all_items'                  => __( 'All Features', 'mokilla-core' ),
-            'parent_item'                => __( 'Parent Feature', 'mokilla-core' ),
-            'parent_item_colon'          => __( 'Parent Feature:', 'mokilla-core' ),
-            'new_item_name'              => __( 'New Feature Name', 'mokilla-core' ),
-            'add_new_item'               => __( 'Add New Feature', 'mokilla-core' ),
-            'edit_item'                  => __( 'Edit Feature', 'mokilla-core' ),
-            'update_item'                => __( 'Update Feature', 'mokilla-core' ),
-            'view_item'                  => __( 'View Feature', 'mokilla-core' ),
+            'name'                       => _x( 'Municipalitys', 'Taxonomy General Name', 'mokilla-core' ),
+            'singular_name'              => _x( 'Municipality', 'Taxonomy Singular Name', 'mokilla-core' ),
+            'menu_name'                  => __( 'Municipalitys', 'mokilla-core' ),
+            'all_items'                  => __( 'All Municipalitys', 'mokilla-core' ),
+            'parent_item'                => __( 'Parent Municipality', 'mokilla-core' ),
+            'parent_item_colon'          => __( 'Parent Municipality:', 'mokilla-core' ),
+            'new_item_name'              => __( 'New Municipality Name', 'mokilla-core' ),
+            'add_new_item'               => __( 'Add New Municipality', 'mokilla-core' ),
+            'edit_item'                  => __( 'Edit Municipality', 'mokilla-core' ),
+            'update_item'                => __( 'Update Municipality', 'mokilla-core' ),
+            'view_item'                  => __( 'View Municipality', 'mokilla-core' ),
             'separate_items_with_commas' => __( 'Separate items with commas', 'mokilla-core' ),
             'add_or_remove_items'        => __( 'Add or remove items', 'mokilla-core' ),
             'choose_from_most_used'      => __( 'Choose from the most used', 'mokilla-core' ),
-            'popular_items'              => __( 'Popular Features', 'mokilla-core' ),
-            'search_items'               => __( 'Search Features', 'mokilla-core' ),
+            'popular_items'              => __( 'Popular Municipalitys', 'mokilla-core' ),
+            'search_items'               => __( 'Search Municipalitys', 'mokilla-core' ),
             'not_found'                  => __( 'Not Found', 'mokilla-core' ),
             'no_terms'                   => __( 'No items', 'mokilla-core' ),
-            'items_list'                 => __( 'Features list', 'mokilla-core' ),
-            'items_list_navigation'      => __( 'Features list navigation', 'mokilla-core' ),
+            'items_list'                 => __( 'Municipalitys list', 'mokilla-core' ),
+            'items_list_navigation'      => __( 'Municipalitys list navigation', 'mokilla-core' ),
         );
             $args = array(
                 'labels'                     => $labels,

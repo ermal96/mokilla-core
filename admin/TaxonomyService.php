@@ -15,19 +15,19 @@ namespace mokilla\mokilla_core_admin;
 
 use mokilla\mokilla_core_admin\PostTypeListings;
 
-class TaxonomyLocation
+class TaxonomyService
 {
-    const SLUG = 'location';
+    const SLUG = 'service';
 
     /**
      * Singleton instance
      *
-     * @var TaxonomyLocation|null $instance This instance.
+     * @var TaxonomyService|null $instance This instance.
      */
     private static $instance = null;
 
     /**
-     * TaxonomyLocation constructor.
+     * TaxonomyService constructor.
      */
     private function __construct()
     {
@@ -36,9 +36,9 @@ class TaxonomyLocation
     /**
      * Get the singleton instance
      *
-     * @return TaxonomyLocation
+     * @return TaxonomyService
      */
-    public static function get_instance(): TaxonomyLocation
+    public static function get_instance(): TaxonomyService
     {
         if (is_null(self::$instance)) {
             $c              = __CLASS__;
@@ -50,32 +50,32 @@ class TaxonomyLocation
 
 
     /**
-     * Creates Tax TaxonomyLocation.
+     * Creates Tax TaxonomyService.
      */
     public function create_tax()
     {
 
         $labels = array(
-            'name'                       => _x( 'Locations', 'Taxonomy General Name', 'mokilla-core' ),
-            'singular_name'              => _x( 'Location', 'Taxonomy Singular Name', 'mokilla-core' ),
-            'menu_name'                  => __( 'Locations', 'mokilla-core' ),
-            'all_items'                  => __( 'All Locations', 'mokilla-core' ),
-            'parent_item'                => __( 'Parent Location', 'mokilla-core' ),
-            'parent_item_colon'          => __( 'Parent Location:', 'mokilla-core' ),
-            'new_item_name'              => __( 'New Location Name', 'mokilla-core' ),
-            'add_new_item'               => __( 'Add New Location', 'mokilla-core' ),
-            'edit_item'                  => __( 'Edit Location', 'mokilla-core' ),
-            'update_item'                => __( 'Update Location', 'mokilla-core' ),
-            'view_item'                  => __( 'View Location', 'mokilla-core' ),
+            'name'                       => _x( 'Services', 'Taxonomy General Name', 'mokilla-core' ),
+            'singular_name'              => _x( 'Service', 'Taxonomy Singular Name', 'mokilla-core' ),
+            'menu_name'                  => __( 'Services', 'mokilla-core' ),
+            'all_items'                  => __( 'All Services', 'mokilla-core' ),
+            'parent_item'                => __( 'Parent Service', 'mokilla-core' ),
+            'parent_item_colon'          => __( 'Parent Service:', 'mokilla-core' ),
+            'new_item_name'              => __( 'New Service Name', 'mokilla-core' ),
+            'add_new_item'               => __( 'Add New Service', 'mokilla-core' ),
+            'edit_item'                  => __( 'Edit Service', 'mokilla-core' ),
+            'update_item'                => __( 'Update Service', 'mokilla-core' ),
+            'view_item'                  => __( 'View Service', 'mokilla-core' ),
             'separate_items_with_commas' => __( 'Separate items with commas', 'mokilla-core' ),
             'add_or_remove_items'        => __( 'Add or remove items', 'mokilla-core' ),
             'choose_from_most_used'      => __( 'Choose from the most used', 'mokilla-core' ),
-            'popular_items'              => __( 'Popular Locations', 'mokilla-core' ),
-            'search_items'               => __( 'Search Locations', 'mokilla-core' ),
+            'popular_items'              => __( 'Popular Services', 'mokilla-core' ),
+            'search_items'               => __( 'Search Services', 'mokilla-core' ),
             'not_found'                  => __( 'Not Found', 'mokilla-core' ),
             'no_terms'                   => __( 'No items', 'mokilla-core' ),
-            'items_list'                 => __( 'Locations list', 'mokilla-core' ),
-            'items_list_navigation'      => __( 'Locations list navigation', 'mokilla-core' ),
+            'items_list'                 => __( 'Services list', 'mokilla-core' ),
+            'items_list_navigation'      => __( 'Services list navigation', 'mokilla-core' ),
         );
             $args = array(
                 'labels'                     => $labels,
